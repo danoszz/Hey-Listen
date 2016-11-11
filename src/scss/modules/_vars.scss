@@ -1,0 +1,10 @@
+$color-black: #000000;
+$color-white: #ffffff;
+
+$size--distance__popout: 1rem;
+$size--padding__header: 2rem;
+$size--max-width__main: 100em;
+$size--width__grid-item: 20%;
+$size--padding__grid-item: $size--width__grid-item / 10;
+
+$breakpoints: (phone: 30em, tablet: 55em, desktop: 64em);

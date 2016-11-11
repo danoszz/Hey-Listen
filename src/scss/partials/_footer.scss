@@ -1,0 +1,36 @@
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: white;
+    flex-direction: column;
+    color: black;
+    font-size: 1em;
+    text-align: justify;
+}
+footer p {
+    margin: 5em 2em;
+    font-weight: 300;
+    max-width: 60em;
+}
+footer p a {
+    text-decoration: none;
+    position: relative;
+    color: #4C00EC;
+    -webkit-transition: 0.5s ease;
+    transition: 0.5s ease;
+}
+footer p a:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    border-bottom: 2px solid #4C00EC;
+    -webkit-transition: 0.5s ease;
+    transition: 0.5s ease;
+}
+footer p a:hover:after {
+    width: 100%;
+}

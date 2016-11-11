@@ -1,0 +1,53 @@
+/* Music Board */
+.music-player {
+  position: relative;
+  overflow: hidden;
+  max-height: 500px;
+  transition: all 0.45s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  opacity: 1;
+  min-height: 10em;
+  background-color: #333;
+  margin: 0 $size--padding__grid-item $size--padding__grid-item 0;
+
+  .demo-iframe {
+    height: 200px;
+    background-color: $color-white;
+  }
+
+  &:hover {
+    transition: all 0.45s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    transform: translate(-$size--distance__popout, -$size--distance__popout);
+    box-shadow: long-shadow( $direction: 45deg, $length: 15px, $color: #fff, $fade: #fff );
+  }
+  @include media(">phone", "<=tablet") {
+    opacity: 1;
+    margin-bottom: 5px;
+
+    &:hover {
+      transform: none;
+      box-shadow: none;
+    }
+  }
+  @include media("<phone") {
+    border: 0;
+  }
+}
+
+.comment-section {
+  color: white;
+  text-align: center;
+  padding: 5%;
+  min-height: 75px;
+}
+
+.sc-background-light {
+  display: none!important;
+}
+
+.comment-section {
+  margin: 0 auto;
+}
+
+.comment-section p {
+  //text-shadow: 0.5px 1.5px green, -1px -1.5px red;
+}
