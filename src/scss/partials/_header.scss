@@ -4,5 +4,12 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  position: relative;
   padding: $size--padding__header;
+
+  nav {
+   position: absolute;
+   top: $size--padding__header;
+   right: $size--padding__header;
+  }
 }

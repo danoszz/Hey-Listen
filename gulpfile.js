@@ -1,5 +1,3 @@
-'use strict';
-
 // ----------- Dependencies
 
 var gulp = require('gulp'),
@@ -14,6 +12,19 @@ var gulp = require('gulp'),
     sourcemaps = require('gulp-sourcemaps'),
     package = require('./package.json');
 
+// ----------- Variables
+
+// var aj = 'assets/js/',
+//     ac = 'assets/css/',
+//     ai = 'assets/images/',
+//     sj = 'src/js/',
+//     // // Grom:
+//     // sg = 'src/grom/**/*.scss',
+//     // Kirby building blocks:
+//     site_s = 'site/snippets/*.php',
+//     site_t = 'site/templates/*.php',
+//     // Kirby content:
+//     kc = 'content/**/*.txt';
 
 var banner = [
   '/*!\n' +
@@ -32,12 +43,12 @@ gulp.task('css', function () {
     .pipe(sourcemaps.init())
     .pipe(sass().on('error', sass.logError))
     .pipe(autoprefixer('last 4 version'))
-    .pipe(gulp.dest('app/assets/css'))
+    .pipe(gulp.dest('assets/css'))
     .pipe(cssnano())
     .pipe(rename({ suffix: '.min' }))
     .pipe(header(banner, { package : package }))
     .pipe(sourcemaps.write())
-    .pipe(gulp.dest('app/assets/css'))
+    .pipe(gulp.dest('assets/css'))
     .pipe(browserSync.reload({stream:true}));
 });
 
@@ -63,6 +74,7 @@ gulp.task('browser-sync', function() {
         }
     });
 });
+
 gulp.task('bs-reload', function () {
     browserSync.reload();
 });

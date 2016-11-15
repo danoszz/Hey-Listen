@@ -1,0 +1,25 @@
+Title: Hey Listen
+
+----
+
+Author: Daan van der Zwaag
+
+----
+
+Description: Music Publishing
+
+----
+
+Keywords: Music Publishing, Hey Listen, Dirtcaps, Ivo Maissan
+
+----
+
+Copyright: © 2016–(date: Year) (link: http://heylisten.nl text: Hey Listen)
+
+----
+
+Shoutout: Design by (link: https://dvdz.design text: DVDZ Design)
+
+----
+
+Mail: ivo@kbfl.nl

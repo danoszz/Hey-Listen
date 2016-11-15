@@ -2,22 +2,47 @@
 .music-player {
   position: relative;
   overflow: hidden;
-  max-height: 500px;
+  max-height: $size--music-element__inner * 2;
   transition: all 0.45s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   opacity: 1;
   min-height: 10em;
-  background-color: #333;
+  background-color: lighten( $color-black, 20%);
   margin: 0 $size--padding__grid-item $size--padding__grid-item 0;
 
-  .demo-iframe {
-    height: 200px;
-    background-color: $color-white;
+  .iframe--wrapper {
+    height: $size--music-element__inner;
+    background-color: lighten( $color-black, 20%);
+    position: relative;
+
+    &:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: $color-black;
+      mix-blend-mode: color;
+      transition: all 300ms ease-in;
+      pointer-events: none;
+    }
+
+    iframe {
+      height: $size--music-element__inner;
+      width: 100%;
+    }
   }
 
   &:hover {
     transition: all 0.45s cubic-bezier(0.68, -0.55, 0.265, 1.55);
     transform: translate(-$size--distance__popout, -$size--distance__popout);
     box-shadow: long-shadow( $direction: 45deg, $length: $size--distance__popout, $color: $color-white, $fade: $color-white );
+
+    .iframe--wrapper {
+      &:after {
+        background-color: transparent;
+        transition: all 300ms ease-out;
+      }
+    }
   }
   @include media(">phone", "<=tablet") {
     opacity: 1;
@@ -31,23 +56,21 @@
   @include media("<phone") {
     border: 0;
   }
+
+  // Specific classes in combination with Kirby Plugin oEmbed
+
+  .kirby-plugin-oembed--YouTube {
+    position: initial;
+  }
 }
 
-.comment-section {
+.info--section {
   color: white;
   text-align: center;
   padding: 5%;
   min-height: 75px;
-}
 
-.sc-background-light {
-  display: none!important;
-}
-
-.comment-section {
-  margin: 0 auto;
-}
-
-.comment-section p {
-  //text-shadow: 0.5px 1.5px green, -1px -1.5px red;
+  h3 {
+    font-size: 1em;
+  }
 }

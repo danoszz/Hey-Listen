@@ -1,0 +1,29 @@
+title: Music Element
+
+files: false
+
+pages: false
+
+
+fields:
+  title:
+    label:      Title
+    type:       text
+    width:      2/4
+    required:   true
+
+  category:
+    label:      Category
+    type:       tags
+    width:      2/4
+    help:       Define the category of the music element. Ex. Publishing and Management
+
+  featured_video:
+    label:      Music Element
+    type:       oembed
+    preview:    true
+    required:   true
+    info:       false
+    cheatsheet: false
+    height:     100%
+    width:      2/4

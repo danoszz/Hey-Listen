@@ -3,8 +3,9 @@ $color-white: #ffffff;
 
 $size--distance__popout: 1rem;
 $size--padding__header: 2rem;
-$size--max-width__main: 100em;
+$size--max-width__main: 120em;
 $size--width__grid-item: 20%;
 $size--padding__grid-item: $size--width__grid-item / 10;
+$size--music-element__inner: 300px;
 
-$breakpoints: (phone: 30em, tablet: 55em, desktop: 64em);
+$breakpoints: (phone: 30em, tablet: 55em, desktop: 64em, bigassscreen: 120em);

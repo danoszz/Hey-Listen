@@ -13,3 +13,9 @@
   color: $color-white;
   text-shadow: none;
 }
+
+/*---- Spinner CSS ----*/
+
+.lazy-hidden {
+  background: transparent url('../img/ring.svg') no-repeat 50% 50%;
+}
