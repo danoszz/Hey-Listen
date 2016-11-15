@@ -403,12 +403,6 @@ textarea {
           justify-content: center;
   padding: 2rem; }
 
-.logo a {
-  color: #ffffff; }
-  .logo a svg {
-    width: 100%;
-    height: auto; }
-
 .nav ul {
   list-style: none; }
 
@@ -489,6 +483,17 @@ footer p a:hover:after {
   color: #ffffff;
   text-shadow: none; }
 
+.logo a {
+  color: #ffffff;
+  -webkit-filter: url(#drop-shadow);
+          filter: url(#drop-shadow); }
+  .logo a svg {
+    fill: #94d31b;
+    -webkit-filter: url(#drop-shadow);
+            filter: url(#drop-shadow);
+    width: 100%;
+    height: auto; }
+
 /* Music Board */
 .music-player {
   position: relative;
@@ -507,7 +512,7 @@ footer p a:hover:after {
     -webkit-transform: translate(-1rem, -1rem);
         -ms-transform: translate(-1rem, -1rem);
             transform: translate(-1rem, -1rem);
-    box-shadow: 0.10607px 0.10607px 0 white, 0.21213px 0.21213px 0 white, 0.3182px 0.3182px 0 white, 0.42426px 0.42426px 0 white, 0.53033px 0.53033px 0 white, 0.6364px 0.6364px 0 white, 0.74246px 0.74246px 0 white, 0.84853px 0.84853px 0 white, 0.95459px 0.95459px 0 white, 1.06066px 1.06066px 0 white, 1.16673px 1.16673px 0 white, 1.27279px 1.27279px 0 white, 1.37886px 1.37886px 0 white, 1.48492px 1.48492px 0 white, 1.59099px 1.59099px 0 white, 1.69706px 1.69706px 0 white, 1.80312px 1.80312px 0 white, 1.90919px 1.90919px 0 white, 2.01525px 2.01525px 0 white, 2.12132px 2.12132px 0 white, 2.22739px 2.22739px 0 white, 2.33345px 2.33345px 0 white, 2.43952px 2.43952px 0 white, 2.54558px 2.54558px 0 white, 2.65165px 2.65165px 0 white, 2.75772px 2.75772px 0 white, 2.86378px 2.86378px 0 white, 2.96985px 2.96985px 0 white, 3.07591px 3.07591px 0 white, 3.18198px 3.18198px 0 white, 3.28805px 3.28805px 0 white, 3.39411px 3.39411px 0 white, 3.50018px 3.50018px 0 white, 3.60624px 3.60624px 0 white, 3.71231px 3.71231px 0 white, 3.81838px 3.81838px 0 white, 3.92444px 3.92444px 0 white, 4.03051px 4.03051px 0 white, 4.13657px 4.13657px 0 white, 4.24264px 4.24264px 0 white, 4.34871px 4.34871px 0 white, 4.45477px 4.45477px 0 white, 4.56084px 4.56084px 0 white, 4.6669px 4.6669px 0 white, 4.77297px 4.77297px 0 white, 4.87904px 4.87904px 0 white, 4.9851px 4.9851px 0 white, 5.09117px 5.09117px 0 white, 5.19723px 5.19723px 0 white, 5.3033px 5.3033px 0 white, 5.40937px 5.40937px 0 white, 5.51543px 5.51543px 0 white, 5.6215px 5.6215px 0 white, 5.72756px 5.72756px 0 white, 5.83363px 5.83363px 0 white, 5.9397px 5.9397px 0 white, 6.04576px 6.04576px 0 white, 6.15183px 6.15183px 0 white, 6.2579px 6.2579px 0 white, 6.36396px 6.36396px 0 white, 6.47003px 6.47003px 0 white, 6.57609px 6.57609px 0 white, 6.68216px 6.68216px 0 white, 6.78823px 6.78823px 0 white, 6.89429px 6.89429px 0 white, 7.00036px 7.00036px 0 white, 7.10642px 7.10642px 0 white, 7.21249px 7.21249px 0 white, 7.31856px 7.31856px 0 white, 7.42462px 7.42462px 0 white, 7.53069px 7.53069px 0 white, 7.63675px 7.63675px 0 white, 7.74282px 7.74282px 0 white, 7.84889px 7.84889px 0 white, 7.95495px 7.95495px 0 white, 8.06102px 8.06102px 0 white, 8.16708px 8.16708px 0 white, 8.27315px 8.27315px 0 white, 8.37922px 8.37922px 0 white, 8.48528px 8.48528px 0 white, 8.59135px 8.59135px 0 white, 8.69741px 8.69741px 0 white, 8.80348px 8.80348px 0 white, 8.90955px 8.90955px 0 white, 9.01561px 9.01561px 0 white, 9.12168px 9.12168px 0 white, 9.22774px 9.22774px 0 white, 9.33381px 9.33381px 0 white, 9.43988px 9.43988px 0 white, 9.54594px 9.54594px 0 white, 9.65201px 9.65201px 0 white, 9.75807px 9.75807px 0 white, 9.86414px 9.86414px 0 white, 9.97021px 9.97021px 0 white, 10.07627px 10.07627px 0 white, 10.18234px 10.18234px 0 white, 10.2884px 10.2884px 0 white, 10.39447px 10.39447px 0 white, 10.50054px 10.50054px 0 white, 10.6066px 10.6066px 0 white; }
+    box-shadow: 0.00707rem 0.00707rem 0 white, 0.01414rem 0.01414rem 0 white, 0.02121rem 0.02121rem 0 white, 0.02828rem 0.02828rem 0 white, 0.03536rem 0.03536rem 0 white, 0.04243rem 0.04243rem 0 white, 0.0495rem 0.0495rem 0 white, 0.05657rem 0.05657rem 0 white, 0.06364rem 0.06364rem 0 white, 0.07071rem 0.07071rem 0 white, 0.07778rem 0.07778rem 0 white, 0.08485rem 0.08485rem 0 white, 0.09192rem 0.09192rem 0 white, 0.09899rem 0.09899rem 0 white, 0.10607rem 0.10607rem 0 white, 0.11314rem 0.11314rem 0 white, 0.12021rem 0.12021rem 0 white, 0.12728rem 0.12728rem 0 white, 0.13435rem 0.13435rem 0 white, 0.14142rem 0.14142rem 0 white, 0.14849rem 0.14849rem 0 white, 0.15556rem 0.15556rem 0 white, 0.16263rem 0.16263rem 0 white, 0.16971rem 0.16971rem 0 white, 0.17678rem 0.17678rem 0 white, 0.18385rem 0.18385rem 0 white, 0.19092rem 0.19092rem 0 white, 0.19799rem 0.19799rem 0 white, 0.20506rem 0.20506rem 0 white, 0.21213rem 0.21213rem 0 white, 0.2192rem 0.2192rem 0 white, 0.22627rem 0.22627rem 0 white, 0.23335rem 0.23335rem 0 white, 0.24042rem 0.24042rem 0 white, 0.24749rem 0.24749rem 0 white, 0.25456rem 0.25456rem 0 white, 0.26163rem 0.26163rem 0 white, 0.2687rem 0.2687rem 0 white, 0.27577rem 0.27577rem 0 white, 0.28284rem 0.28284rem 0 white, 0.28991rem 0.28991rem 0 white, 0.29698rem 0.29698rem 0 white, 0.30406rem 0.30406rem 0 white, 0.31113rem 0.31113rem 0 white, 0.3182rem 0.3182rem 0 white, 0.32527rem 0.32527rem 0 white, 0.33234rem 0.33234rem 0 white, 0.33941rem 0.33941rem 0 white, 0.34648rem 0.34648rem 0 white, 0.35355rem 0.35355rem 0 white, 0.36062rem 0.36062rem 0 white, 0.3677rem 0.3677rem 0 white, 0.37477rem 0.37477rem 0 white, 0.38184rem 0.38184rem 0 white, 0.38891rem 0.38891rem 0 white, 0.39598rem 0.39598rem 0 white, 0.40305rem 0.40305rem 0 white, 0.41012rem 0.41012rem 0 white, 0.41719rem 0.41719rem 0 white, 0.42426rem 0.42426rem 0 white, 0.43134rem 0.43134rem 0 white, 0.43841rem 0.43841rem 0 white, 0.44548rem 0.44548rem 0 white, 0.45255rem 0.45255rem 0 white, 0.45962rem 0.45962rem 0 white, 0.46669rem 0.46669rem 0 white, 0.47376rem 0.47376rem 0 white, 0.48083rem 0.48083rem 0 white, 0.4879rem 0.4879rem 0 white, 0.49497rem 0.49497rem 0 white, 0.50205rem 0.50205rem 0 white, 0.50912rem 0.50912rem 0 white, 0.51619rem 0.51619rem 0 white, 0.52326rem 0.52326rem 0 white, 0.53033rem 0.53033rem 0 white, 0.5374rem 0.5374rem 0 white, 0.54447rem 0.54447rem 0 white, 0.55154rem 0.55154rem 0 white, 0.55861rem 0.55861rem 0 white, 0.56569rem 0.56569rem 0 white, 0.57276rem 0.57276rem 0 white, 0.57983rem 0.57983rem 0 white, 0.5869rem 0.5869rem 0 white, 0.59397rem 0.59397rem 0 white, 0.60104rem 0.60104rem 0 white, 0.60811rem 0.60811rem 0 white, 0.61518rem 0.61518rem 0 white, 0.62225rem 0.62225rem 0 white, 0.62933rem 0.62933rem 0 white, 0.6364rem 0.6364rem 0 white, 0.64347rem 0.64347rem 0 white, 0.65054rem 0.65054rem 0 white, 0.65761rem 0.65761rem 0 white, 0.66468rem 0.66468rem 0 white, 0.67175rem 0.67175rem 0 white, 0.67882rem 0.67882rem 0 white, 0.68589rem 0.68589rem 0 white, 0.69296rem 0.69296rem 0 white, 0.70004rem 0.70004rem 0 white, 0.70711rem 0.70711rem 0 white; }
 
 @media (min-width: 30.01em) and (max-width: 55em) {
   .music-player {
@@ -564,9 +569,8 @@ h1 + a:hover {
       margin-right: 0; } }
 
 .grid-item--flex {
-  width: 18%; }
-  .grid-item--flex:nth-child(5n+0) {
-    margin-right: 0; }
+  width: 18%;
+  transition: all 300ms ease-in-out; }
 
 @media (min-width: 55.01em) and (max-width: 64em) {
   .grid-item--flex {

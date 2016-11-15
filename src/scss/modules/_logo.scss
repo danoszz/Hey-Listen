@@ -1,0 +1,16 @@
+
+.logo {
+
+  a {
+    color: $color-white;
+    //-webkit-filter: drop-shadow(0 1px 10px rgba(113,158,206,0.8));
+    filter: url(#drop-shadow);
+    svg {
+      fill: #94d31b;
+      //-webkit-filter: drop-shadow(0 1px 10px rgba(113,158,206,0.8));
+      filter: url(#drop-shadow);
+      width: 100%;
+      height: auto;
+    }
+  }
+}

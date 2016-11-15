@@ -25,10 +25,7 @@ h1 + a:hover {
 
 .grid-item--flex {
   width: $size--width__grid-item - $size--padding__grid-item;
-
-  &:nth-child(5n+0) {
-    margin-right: 0;
-  }
+  transition: all 300ms ease-in-out;
   @include media(">tablet", "<=desktop") {
     width: 25% - $size--padding__grid-item;
 

@@ -17,7 +17,7 @@
   &:hover {
     transition: all 0.45s cubic-bezier(0.68, -0.55, 0.265, 1.55);
     transform: translate(-$size--distance__popout, -$size--distance__popout);
-    box-shadow: long-shadow( $direction: 45deg, $length: 15px, $color: #fff, $fade: #fff );
+    box-shadow: long-shadow( $direction: 45deg, $length: $size--distance__popout, $color: $color-white, $fade: $color-white );
   }
   @include media(">phone", "<=tablet") {
     opacity: 1;
