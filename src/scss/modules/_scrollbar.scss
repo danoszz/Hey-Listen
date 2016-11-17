@@ -1,0 +1,22 @@
+::-webkit-scrollbar {
+  width: 0.5em;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 0;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  border-radius: 0;
+  background: $color-white;
+}
+
+::-webkit-scrollbar-thumb:window-inactive {
+  background: transparent;
+}
+
+// For Internet Explorer
+  body {
+    scrollbar-face-color: $color-white;
+    scrollbar-track-color: transparent;
+  }
