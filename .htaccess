@@ -38,6 +38,9 @@ RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^(.*) index.php [L]
 
+RewriteCond %{SERVER_PORT} 80
+RewriteRule ^(.*)$ https://heylisten.dvdz.design/$1 [R,L]
+
 </IfModule>
 
 # Additional recommended values
