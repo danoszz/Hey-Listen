@@ -9,21 +9,22 @@ var gulp = require('gulp'),
     rename = require('gulp-rename'),
     sass = require('gulp-sass'),
     postcss = require('gulp-postcss'),
-    tachyons = require('tachyons-build-css'),
     cleancss = require('gulp-clean-css'),
+    header = require('gulp-header'),
     maps = require('gulp-sourcemaps'),
     cache = require('gulp-cache'),
     del = require('del'),
-    runSequence = require('run-sequence');
+    runSequence = require('run-sequence'),
+    pkg = require('./package.json');
 
   var banner = [
       '/*!\n' +
-      ' * <%= package.name %>\n' +
-      ' * <%= package.title %>\n' +
-      ' * <%= package.url %>\n' +
-      ' * @author <%= package.author %>\n' +
-      ' * @version <%= package.version %>\n' +
-      ' * Copyright ' + new Date().getFullYear() + '. <%= package.license %> licensed.\n' +
+      ' * <%= pkg.name %>\n' +
+      ' * <%= pkg.title %>\n' +
+      ' * <%= pkg.url %>\n' +
+      ' * @author <%= pkg.author %>\n' +
+      ' * @version <%= pkg.version %>\n' +
+      ' * Copyright ' + new Date().getFullYear() + '. <%= pkg.license %> licensed.\n' +
       ' */',
       '\n'
     ].join('');
