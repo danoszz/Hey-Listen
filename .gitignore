@@ -2,7 +2,6 @@
 # http://heylisten.nl/
 # @author Daan van der Zwaag
 
-
 ## Node.js
 lib-cov
 *.seed
@@ -33,8 +32,32 @@ Icon
 .Spotlight-V100
 .Trashes
 
-## Windows
+## Root level
 Thumbs.db
-ehthumbs.db
-Desktop.ini
-$RECYCLE.BIN/
+.DS_Store
+*.sublime-project
+*.sublime-workspace
+*.sass-cache
+*.settings
+
+## Kirby
+
+/site/accounts
+/site/cache
+/thumbs/*
+/assets/avatars/*
+
+## Build files
+
+# .gitignore these, or run a clean before every push, 
+
+# /assets/css/*.css*
+# /assets/images/* add this when we're processing images with Gulp
+# /assets/js/*
+# /src/js/app.js
+
+# reminder: set up environments for the config
+# config.dev.mysite.com.php
+# config.mysite.com.php
+
+# hidden/inactive content
