@@ -13,7 +13,7 @@
 
     </div>
   </footer>
-  <?= css('assets/js/vendor/lazyload.extra.min.js') ?>
   <?= js('assets/plugins/oembed/js/oembed.js') ?>
+  <?= js('assets/js/app.min.js') ?>
 </body>
 </html>

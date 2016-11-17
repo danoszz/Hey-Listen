@@ -55,23 +55,3 @@ a {
     }
   }
 }
-
-@keyframes glitch-anim--link__1 {
-  $steps: 5;
-  @for $i from 0 through $steps {
-    #{percentage($i*(1/$steps))} {
-      clip: rect(random(60)+px, 9999px, random(140)+px, 0);
-    }
-  }
-}
-
-@keyframes glitch-anim--link__2 {
-  $steps: 5;
-  @for $i from 0 through $steps {
-    #{percentage($i*(1/$steps))} {
-      clip: rect(random(60)+px, 9999px, random(140)+px, 0);
-      top: -+random(6)+px;
-      left: random(6)+px;
-    }
-  }
-}

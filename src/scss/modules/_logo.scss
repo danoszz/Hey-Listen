@@ -1,13 +1,10 @@
-
 .logo {
-
   a {
     color: $color-white;
-    //-webkit-filter: drop-shadow(0 1px 10px rgba(113,158,206,0.8));
     filter: url(#drop-shadow);
+
     svg {
       fill: #94d31b;
-      //-webkit-filter: drop-shadow(0 1px 10px rgba(113,158,206,0.8));
       filter: url(#drop-shadow);
       width: 100%;
       height: auto;
@@ -17,10 +14,12 @@
 
 .glitch {
   fill: $color-white;
-  font-size: 150px;
-  text-transform: upercase;
   position: relative;
   display: inline-block;
+
+  #ip--logo__svg {
+    height: $size--logo;
+  }
 
   svg {
     fill: $highlight2;
@@ -29,9 +28,9 @@
     height: auto;
   }
 
-  &:before,
-  &:after {
-    content: url(http://dirtcaps.dvdz.design/img/logo_hey-listen_V3.svg);
+  &:after,
+  &:before {
+    content: url(http://heylisten.dvdz.design/assets/images/logo_hey-listen_V1.svg);
     position: absolute;
     top: 0;
     left: 0;
@@ -39,23 +38,14 @@
     height: 100%;
     background: black;
   }
+
   &:before {
     left: $offset1;
-    clip: rect(0, 0px, -150px, 300px);
     animation: glitch-anim--logo 9s infinite ease-in alternate-reverse;
   }
+
   &:after {
     left: $offset2;
-    clip: rect(150px, 300px, 125px, 0);
     animation: glitch-anim--logo 12s infinite ease-out alternate-reverse;
-  }
-  &:hover {
-    &:before {
-      //animation: glitch-anim--link__1 800ms infinite ease-in-out alternate-reverse;
-    }
-    &:after {
-      //animation: glitch-anim--link__2 800ms infinite ease-in-out alternate-reverse;
-    }
-
   }
 }

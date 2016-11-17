@@ -5,7 +5,7 @@ $projects = page('projects')->children()->visible();
 if(isset($limit)) $projects = $projects->limit($limit);
 
 ?>
-<main class="main" role="main">
+<main class="main ip-main" role="main">
   <div class="flexgrid">
   <?php foreach($projects as $project): ?>
 

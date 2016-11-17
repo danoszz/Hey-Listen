@@ -73,6 +73,7 @@ gulp.task('serve', ['compileSass'], function() {
 gulp.task('concatScripts', function() {
   return gulp.src([
     sj + 'jquery-2.1.4.min.js',
+    sj + 'preloader.js',
     sj + 'main.js'
   ])
   .pipe(concat('app.js'))

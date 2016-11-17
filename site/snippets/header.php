@@ -11,11 +11,10 @@
 
   <?= css('assets/plugins/oembed/css/oembed.css') ?>
   <?= css('assets/css/styles.min.css') ?>
+  <?= js('assets/js/vendor/modernizr.custom.js') ?>
 
 </head>
-<body>
+<body id="ip-container" class="ip-container">
 
-  <header class="header" role="banner">
-    <?php snippet('logo') ?>
-    <?php snippet('menu') ?>
-  </header>
+<?php snippet('preloader') ?>
+<?php snippet('menu') ?>

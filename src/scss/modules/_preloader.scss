@@ -1,0 +1,173 @@
+/* Credits: http://tympanus.net/codrops/2014/08/05/page-preloading-effect/ */
+
+.ip-header {
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  min-height: 480px;
+  width: 100%;
+  height: 100%;
+  background: $color-black;
+  .ip-logo {
+    margin: 0;
+    text-align: center;
+  }
+}
+
+.ip-logo, .ip-loader {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+  cursor: default;
+
+}
+
+.ip-logo {
+  top: 0;
+  height: 100%;
+  transform: translate3d(0, 25%, 0);
+  pointer-events: all;
+}
+
+.ip-loader {
+  bottom: 20%;
+  pointer-events: none;
+}
+
+.ip-header {
+  .ip-inner {
+    display: block;
+    margin: 0 auto;
+  }
+  .ip-logo svg {
+    min-width: $size--logo;
+    max-width: $size--logo;
+    width: 25%;
+    path {
+      fill: $color-white;
+    }
+  }
+  .ip-loader svg path {
+    fill: none;
+    stroke-width: 3;
+    &.ip-loader-circlebg {
+      stroke: lighten( $color-black, 20%);
+      stroke: #333;
+    }
+    &.ip-loader-circle {
+      transition: stroke-dashoffset 0.2s;
+      stroke: $color-white;
+    }
+  }
+}
+
+/* Animations */
+
+/* Initial animation of header elements */
+
+.loading {
+  .ip-logo {
+    opacity: 1;
+    animation: animInitialHeader 1s cubic-bezier(0.7, 0, 0.3, 1) both;
+  }
+  .ip-loader {
+    opacity: 1;
+    animation: animInitialHeader 1s cubic-bezier(0.7, 0, 0.3, 1) both;
+    -webkit-animation-delay: 0.2s;
+    animation-delay: 0.2s;
+  }
+}
+
+@keyframes animInitialHeader {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 800px, 0);
+    transform: translate3d(0, 800px, 0);
+  }
+}
+
+
+/* Header elements when loading finishes */
+
+.loaded {
+  .ip-logo, .ip-loader {
+    opacity: 1;
+  }
+  .ip-logo {
+    transform-origin: 50% 0;
+    animation: animLoadedLogo 1s cubic-bezier(0.7, 0, 0.3, 1) forwards;
+  }
+  .ip-loader {
+    animation: animLoadedLoader 0.5s cubic-bezier(0.7, 0, 0.3, 1) forwards;
+  }
+  .ip-logo svg path {
+    transition: all 0.5s ease 0.3s;
+    fill: $color-white;
+  }
+  .ip-header {
+    animation: animLoadedHeader 1s cubic-bezier(0.7, 0, 0.3, 1) forwards;
+  }
+  .ip-main .flexgrid .grid-item--flex {
+    animation: animLoadedContent 1s cubic-bezier(0.7, 0, 0.3, 1) both;
+  }
+}
+
+@keyframes animLoadedLogo {
+  to {
+    transform: translate3d(0, 100%, 0) translate3d(0, 50px, 0) scale3d(0.65, 0.65, 1);
+  }
+}
+
+
+@keyframes animLoadedLoader {
+  to {
+    opacity: 0;
+    transform: translate3d(0, -100%, 0) scale3d(0.3, 0.3, 1);
+  }
+}
+
+/* Header animation when loading finishes */
+
+@keyframes animLoadedHeader {
+  to {
+    transform: translate3d(0, -100%, 0);
+  }
+}
+
+
+/* Content animations */
+
+@for $i from 1 to 20 {
+  .loaded .ip-main .flexgrid .grid-item--flex:nth-child(#{$i}) { animation-delay: $i * 0.2s; }
+}
+
+@keyframes animLoadedContent {
+  from {
+    transform: translate3d(0, 200px, 0);
+  }
+}
+
+
+/* Change layout class for header */
+
+.layout-switch .ip-header {
+  position: absolute;
+}
+
+/* No JS */
+
+.no-js .ip-header {
+  position: relative;
+  min-height: 0px;
+  .ip-logo {
+    margin-top: 20px;
+    height: 180px;
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+    svg path {
+      fill: $color-white;
+    }
+  }
+}
