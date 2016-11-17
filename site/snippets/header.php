@@ -10,7 +10,7 @@
   <meta name="keywords" content="<?= $site->kewords()->html() ?>">
 
   <?= css('assets/plugins/oembed/css/oembed.css') ?>
-  <?= css('assets/css/style.min.css') ?>
+  <?= css('assets/css/styles.min.css') ?>
 
 </head>
 <body>

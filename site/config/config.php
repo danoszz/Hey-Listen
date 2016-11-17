@@ -16,7 +16,6 @@ for more information: http://getkirby.com/license
 */
 
 c::set('license', 'put your license key here');
-c::set('plugin.oembed.video.autoplay', ture);
 
 c::set('plugin.oembed.video.lazyload', true);
 c::set('plugin.oembed.video.lazyload.btn', 'assets/plugins/oembed/images/play.png');

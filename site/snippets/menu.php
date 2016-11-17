@@ -1,9 +1,10 @@
 <nav class="navigation" role="navigation">
   <ul class="menu">
-    <?php foreach($pages->visible() as $item): ?>
-    <li class="menu-item<?= r($item->isOpen(), ' is-active') ?>">
-      <a href="<?= $item->url() ?>"><?= $item->title()->html() ?></a>
+  <li class="menu--item">
+    <a href="#">About</a>
+  </li>
+    <li class="menu--item">
+      <a href="mailto:ivo@kbfl.nl">Contact</a>
     </li>
-    <?php endforeach ?>
   </ul>
 </nav>
