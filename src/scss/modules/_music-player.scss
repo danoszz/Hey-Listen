@@ -3,7 +3,7 @@
   position: relative;
   overflow: hidden;
   max-height: $size--music-element__inner * 2;
-  transition: all 0.45s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transition: all 400ms $transition--smooth__one;
   opacity: 1;
   min-height: 10em;
   background-color: lighten( $color-black, 20%);
@@ -34,7 +34,7 @@
 
   &:hover {
 
-    transition: all 450ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    transition: all 400ms $transition--smooth__one;
     box-shadow: long-shadow( $direction: 45deg, $length: $size--distance__popout, $color: $color-white, $fade: $color-white );
     transform: translate(-$size--distance__popout, -$size--distance__popout);
 

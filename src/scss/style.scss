@@ -25,8 +25,10 @@
 /*----------*/
 
 @import 'partials/_header.scss';
+@import 'partials/_overlay.scss';
 @import 'partials/_nav.scss';
 @import 'partials/_sidebar.scss';
+@import 'partials/_about.scss';
 @import 'partials/_main.scss';
 @import 'partials/_footer.scss';
 
@@ -35,6 +37,7 @@
 /*-------------------*/
 
 @import 'modules/_animations.scss';
+@import 'modules/_scrollbar.scss';
 @import 'modules/_links.scss';
 @import 'modules/_typography.scss';
 @import 'modules/_misc.scss';

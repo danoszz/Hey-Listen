@@ -3,4 +3,9 @@
   padding: $size--padding__header;
   margin: 0 auto;
   max-width: $size--max-width__main;
+  transition: transform 800ms 1900ms $transition--smooth__one;
+  &.overlay-open {
+  	transform: scale(0.8);
+    transition: transform 600ms $transition--smooth__one;
+  }
 }

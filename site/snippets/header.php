@@ -14,7 +14,7 @@
   <?= js('assets/js/vendor/modernizr.custom.js') ?>
 
 </head>
-<body id="ip-container" class="ip-container">
+<body>
 
 <?php snippet('preloader') ?>
 <?php snippet('menu') ?>

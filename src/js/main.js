@@ -4,6 +4,7 @@
 
   $(function () {
 
+    // Changing Title
     var messages = ['Hey!?', 'Why so serious...!?', 'Do it, seriously do it!', 'Be Right Back!', 'Hey! What?'];
     var original;
 

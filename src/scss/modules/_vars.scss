@@ -10,3 +10,5 @@ $size--music-element__inner: 300px;
 $size--logo: 400px;
 
 $breakpoints: (phone: 30em, tablet: 55em, desktop: 64em, bigassscreen: 120em);
+
+$transition--smooth__one: cubic-bezier(.2,.88,.52,1);
