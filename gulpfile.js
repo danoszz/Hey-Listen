@@ -55,11 +55,10 @@ gulp.task('serve', ['compileSass'], function() {
 
     // Note: I'm using MAMP PRO for my local server
     browserSync.init({
-        proxy: 'localhost:8888/kirbystarterkit',
+        proxy: 'localhost:8888/hey-listen',
         notify: false
     });
 
-    // Watch styles, scripts, snippets/templates, kirby content text files
     gulp.watch(sg, ['compileSass']);
     gulp.watch(sj, ['minifyScripts']);
     gulp.watch(site_s).on('change', browserSync.reload);
@@ -70,8 +69,6 @@ gulp.task('serve', ['compileSass'], function() {
 
 // ----------- Concat & Minify JS
 
-// Concat all (active) project scripts to src/js/app.js
-// I've added a few here, use them, delete them, add your own, etc.
 gulp.task('concatScripts', function() {
   return gulp.src([
     sj + 'jquery-2.1.4.min.js',
