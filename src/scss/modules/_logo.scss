@@ -15,24 +15,22 @@
   }
 }
 
-
-$offset1: 3px;
-$offset2: -3px;
-// $highlight1: #49FC00;
-// $highlight2: adjust-hue($highlight1, 180);
-// $highlight3: adjust-hue($highlight1, 360);
-$highlight1: red;
-$highlight2: green;
-$highlight3: blue;
-
 .glitch {
-  fill: white;
+  fill: $color-white;
   font-size: 150px;
   text-transform: upercase;
   position: relative;
   display: inline-block;
-  &::before,
-  &::after {
+
+  svg {
+    fill: $highlight2;
+    animation: dropShadow 4000ms infinite ease-in-out alternate-reverse;
+    width: 100%;
+    height: auto;
+  }
+
+  &:before,
+  &:after {
     content: url(http://dirtcaps.dvdz.design/img/logo_hey-listen_V3.svg);
     position: absolute;
     top: 0;
@@ -41,76 +39,23 @@ $highlight3: blue;
     height: 100%;
     background: black;
   }
-  &::before {
+  &:before {
     left: $offset1;
-    //box-shadow: -2px 0 $highlight1;
     clip: rect(0, 0px, -150px, 300px);
-    animation: glitch-anim-2 9s infinite linear alternate-reverse;
+    animation: glitch-anim--logo 9s infinite ease-in alternate-reverse;
   }
-  &::after {
+  &:after {
     left: $offset2;
-    // box-shadow: -2px 0 $highlight2;
     clip: rect(150px, 300px, 125px, 0);
-    animation: glitch-anim 3.5s infinite linear alternate-reverse;
+    animation: glitch-anim--logo 12s infinite ease-out alternate-reverse;
   }
-}
-
-.glitch {
-  color: #fff;
-  //-webkit-filter: drop-shadow(0 1px 10px rgba(113,158,206,0.8));
-  //filter: url(#drop-shadow);
-  svg {
-    fill: $highlight2;
-    //-webkit-filter: drop-shadow(0 1px 10px rgba(0, 0, 0, 1));
-    // filter: url(#drop-shadow);
-    animation: dropShadow 4000ms infinite linear alternate-reverse;
-    width: 100%;
-    height: auto;
-  }
-}
-
-@keyframes dropShadow {
-  32% {
-    -webkit-filter: drop-shadow(0);
-    filter: none;
-  }
-  33% {
-    -webkit-filter: drop-shadow(-3px 1px 0px $highlight1);
-  }
-  34% {
-    -webkit-filter: drop-shadow(0);
-    filter: none;
-  }
-  48% {
-    -webkit-filter: drop-shadow(0);
-    filter: none;
-  }
-  49.9% {
-    -webkit-filter: drop-shadow(3px 1px 0px $highlight2);
-  }
-  50% {
-    -webkit-filter: drop-shadow(0);
-    filter: none;
-  }
-  97% {
-    -webkit-filter: drop-shadow(0);
-    filter: none;
-  }
-  98% {
-    -webkit-filter: drop-shadow(4px -3px 0px $highlight3);
-  }
-  99% {
-    -webkit-filter: drop-shadow(0);
-    filter: none;
-  }
-}
-
-
-@keyframes glitch-anim {
-  $steps: 12;
-  @for $i from 0 through $steps {
-    #{percentage($i*(1/$steps))} {
-      clip: rect(random(300)+px, 9999px, random(300)+px, 0);
+  &:hover {
+    &:before {
+      //animation: glitch-anim--link__1 800ms infinite ease-in-out alternate-reverse;
     }
+    &:after {
+      //animation: glitch-anim--link__2 800ms infinite ease-in-out alternate-reverse;
+    }
+
   }
 }
