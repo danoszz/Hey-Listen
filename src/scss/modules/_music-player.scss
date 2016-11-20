@@ -14,18 +14,7 @@
     background-color: lighten( $color-black, 20%);
     position: relative;
 
-    &:after {
-      content: '';
-      position: absolute;
-      top: 0;
-      width: 100%;
-      height: 100%;
-      background-color: $color-black;
-      mix-blend-mode: color;
-      transition: all 300ms ease-in;
-      pointer-events: none;
-    }
-
+    @extend %nashville;
     iframe {
       height: $size--music-element__inner;
       width: 100%;
@@ -33,15 +22,14 @@
   }
 
   &:hover {
-
-    transition: all 400ms $transition--smooth__one;
-    box-shadow: long-shadow( $direction: 45deg, $length: $size--distance__popout, $color: $color-white, $fade: $color-white );
-    transform: translate(-$size--distance__popout, -$size--distance__popout);
+      transition: all 400ms $transition--smooth__one;
+      box-shadow: long-shadow( $direction: 45deg, $length: $size--distance__popout, $color: $color-white, $fade: $color-white );
+      transform: translate(-$size--distance__popout, -$size--distance__popout);
 
     .iframe--wrapper {
-      &:after {
-        background-color: transparent;
-        transition: all 300ms ease-out;
+      &:after,
+      &:before {
+        background: transparent;
       }
     }
   }
@@ -57,9 +45,7 @@
   @include media("<phone") {
     border: 0;
   }
-
   // Specific classes in combination with Kirby Plugin oEmbed
-
   .kirby-plugin-oembed--YouTube {
     position: initial;
   }
