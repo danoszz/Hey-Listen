@@ -26,11 +26,15 @@
     animation: dropShadow 4000ms infinite ease-in-out alternate-reverse;
     width: 100%;
     height: auto;
+
+    a {
+        width: 100%;
+    }
   }
 
   &:after,
   &:before {
-    content: url(http://heylisten.dvdz.design/assets/images/logo_hey-listen_V1.svg);
+    content: url(http://heylisten.dvdz.design/assets/images/hey-listen-long_V2.svg);
     position: absolute;
     top: 0;
     left: 0;
