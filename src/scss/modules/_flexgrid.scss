@@ -18,12 +18,15 @@
   width: ($size--width__grid-item * 1.25) - $size--padding__grid-item;
   transition: all 300ms ease-in-out;
 
+  // five column layout
   @include media(">bigassscreen") {
     width: $size--width__grid-item - $size--padding__grid-item;
   }
+  // two column layout
   @include media("<tablet") {
     width: $size--width__grid-item * 2.5 - $size--padding__grid-item;
   }
+  // one column layout
   @include media("<phone") {
     width: 100%;
     margin: ($size--padding__grid-item * 2) 0;
