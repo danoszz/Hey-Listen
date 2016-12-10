@@ -25,10 +25,8 @@ c::set('plugin.oembed.caching.duration', 24); // in hours
 
 c::set('plugin.oembed.w3c.enforce', false);
 
-// c::set('plugin.oembed.providers.jsapi', false);
 c::set('plugin.oembed.providers.facebook.key', null);
 c::set('plugin.oembed.providers.google.key', null);
-// c::set('plugin.oembed.providers.soundcloud.key', null):
 
 // Set Dashboard widgets
 
@@ -40,6 +38,9 @@ c::set('panel.widgets', array(
   'history'  => false
 ));
 
+// Set custom CSS for panel
+
+c::set('panel.stylesheet', 'assets/css/custom-panel.css');
 
 /*
 

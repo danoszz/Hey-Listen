@@ -12,7 +12,7 @@
       line-height: 1.5em;
     }
     a {
-      color: #8dae28;
+      color: #47C538;
     }
     p {
       margin-bottom: 1.5em;

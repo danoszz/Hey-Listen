@@ -146,7 +146,7 @@
 
     var showBorder = function($this, preview, info) {
       if(!$this.parents('.field').hasClass('field-with-error')) {
-        setBorder(preview, info, '#8dae28');
+        setBorder(preview, info, '#47C538');
       } else {
         setBorder(preview, info, '#000');
       }

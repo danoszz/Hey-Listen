@@ -14,6 +14,6 @@
   position: absolute;
   content: counter(count, decimal-leading-zero);
   left: 0;
-  color: #8dae28;
+  color: #47C538;
   font-weight: 400;
 }

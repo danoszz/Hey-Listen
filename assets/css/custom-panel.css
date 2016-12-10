@@ -1,0 +1,36 @@
+.custom-color {
+  background-color: #47C538;
+}
+
+/*----- Change secundair color ----
+
+    cmd + shift + f
+    find: 47C538
+    replace: 'yourcolor'
+    replace all
+
+-----------------------------------*/
+.search:after {
+      border-bottom-color: white;
+}
+
+.search-input {
+    color: black;
+    background-color: white;
+    border: 2px solid black;
+    border-top: none;
+    border-right: none;
+}
+@media screen and (min-width: 60em) {
+  .dashboard {
+      -webkit-column-count: 2;
+      -moz-column-count: 2;
+      column-count: 2;
+  }
+
+}
+
+#musicelement-widget > div {
+  max-height: 210px;
+  overflow: scroll;
+}
