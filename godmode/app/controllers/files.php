@@ -52,7 +52,7 @@ class FilesController extends Kirby\Panel\Controllers\Base {
         }
 
         $file->update($form->serialize());
-        $self->notify(':)');
+        $self->notify('😏 ');
         $self->redirect($file);
       } catch(Exception $e) {
         $self->alert($e->getMessage());
@@ -66,7 +66,7 @@ class FilesController extends Kirby\Panel\Controllers\Base {
       'file'     => $file,
       'returnTo' => url::last() == $page->url('files') ? $page->uri('files') : $page->uri('edit'),
       'uploader' => $this->snippet('uploader', array(
-        'url'      => $file->url('replace'), 
+        'url'      => $file->url('replace'),
         'accept'   => $file->mime(),
         'multiple' => false
       ))
@@ -84,8 +84,8 @@ class FilesController extends Kirby\Panel\Controllers\Base {
     }
 
     try {
-      $page->upload();        
-      $this->notify(':)');
+      $page->upload();
+      $this->notify('😏 ');
     } catch(Exception $e) {
       $this->alert($e->getMessage());
     }
@@ -105,8 +105,8 @@ class FilesController extends Kirby\Panel\Controllers\Base {
     }
 
     try {
-      $file->replace();        
-      $this->notify(':)');
+      $file->replace();
+      $this->notify('😏 ');
     } catch(Exception $e) {
       $this->alert($e->getMessage());
     }
@@ -138,7 +138,7 @@ class FilesController extends Kirby\Panel\Controllers\Base {
 
       try {
         $file->delete();
-        $self->notify(':)');
+        $self->notify('😏 ');
         $self->redirect($page, 'edit');
       } catch(Exception $e) {
         $form->alert($e->getMessage());
@@ -152,7 +152,7 @@ class FilesController extends Kirby\Panel\Controllers\Base {
 
   protected function file($page, $filename) {
 
-    $file = $page->file(File::decodeFilename($filename));    
+    $file = $page->file(File::decodeFilename($filename));
 
     if(!$file) {
       throw new Exception(l('files.error.missing.file'));

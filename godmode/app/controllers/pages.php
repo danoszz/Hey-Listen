@@ -29,7 +29,7 @@ class PagesController extends Kirby\Panel\Controllers\Base {
           'title' => $data['title']
         ));
 
-        $self->notify(':)');
+        $self->notify('😏 ');
         $this->redirect($page, 'edit');
 
       } catch(Exception $e) {
@@ -72,7 +72,7 @@ class PagesController extends Kirby\Panel\Controllers\Base {
         }
 
         $page->update($form->serialize());
-        $self->notify(':)');
+        $self->notify('😏 ');
 
         return $self->redirect($page);
       } catch(Exception $e) {
@@ -102,7 +102,7 @@ class PagesController extends Kirby\Panel\Controllers\Base {
     $form = $page->form('delete', function($form) use($page, $self) {
       try {
         $page->delete();
-        $self->notify(':)');
+        $self->notify('😏 ');
         $self->redirect($page->parent()->isSite() ? '/' : $page->parent());
       } catch(Exception $e) {
         $form->alert($e->getMessage());
@@ -138,7 +138,7 @@ class PagesController extends Kirby\Panel\Controllers\Base {
 
       try {
         $page->move(get('uid'));              
-        $self->notify(':)');
+        $self->notify('😏 ');
         $self->redirect($page);
       } catch(Exception $e) {
         $form->alert($e->getMessage());
@@ -173,7 +173,7 @@ class PagesController extends Kirby\Panel\Controllers\Base {
 
         $page->changeTemplate(a::get($data, 'template'));
 
-        $self->notify(':)');
+        $self->notify('😏 ');
         $self->redirect($page);
       } catch(Exception $e) {
         $form->alert($e->getMessage());
@@ -198,7 +198,7 @@ class PagesController extends Kirby\Panel\Controllers\Base {
 
       try {
         $page->toggle(get('position', 'last'));
-        $self->notify(':)');
+        $self->notify('😏 ');
         $self->redirect($page);
       } catch(Exception $e) {
         $form->alert($e->getMessage());

@@ -42,7 +42,7 @@ class UsersController extends Kirby\Panel\Controllers\Base {
 
       try {
         $user = panel()->users()->create($data);
-        $self->notify(':)');
+        $self->notify('😏 ');
         $self->redirect('users');
       } catch(Exception $e) {
         $self->alert($e->getMessage());
@@ -80,7 +80,7 @@ class UsersController extends Kirby\Panel\Controllers\Base {
       
       try {
         $user->update($data);
-        $self->notify(':)');
+        $self->notify('😏 ');
         $self->redirect($user, 'edit');
       } catch(Exception $e) {
         $self->alert($e->getMessage());
@@ -114,7 +114,7 @@ class UsersController extends Kirby\Panel\Controllers\Base {
 
       try {
         $user->delete();
-        $self->notify(':)');
+        $self->notify('😏 ');
         $self->redirect('users');
       } catch(Exception $e) {
         $form->alert($e->getMessage());

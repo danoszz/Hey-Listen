@@ -13,19 +13,19 @@ class AvatarsController extends Kirby\Panel\Controllers\Base {
 
       if($avatar->exists() && $avatar->ui()->replace() === false) {
         throw new PermissionsException();
-      } 
+      }
 
       if(!$avatar->exists() && $avatar->ui()->upload() === false) {
         throw new PermissionsException();
       }
 
-      $avatar->upload();        
-      $this->notify(':)');
+      $avatar->upload();
+      $this->notify('notify('😏 ');');
     } catch(Exception $e) {
       $this->alert($e->getMessage());
     }
 
-    $this->redirect($user);        
+    $this->redirect($user);
 
   }
 
@@ -46,8 +46,8 @@ class AvatarsController extends Kirby\Panel\Controllers\Base {
     $form = $avatar->form('delete', function($form) use($user, $avatar, $self) {
 
       try {
-        $avatar->delete();        
-        $self->notify(':)');
+        $avatar->delete();
+        $self->notify('😏 ');
         $self->redirect($user);
       } catch(Exception $e) {
         $form->alert($e->getMessage());

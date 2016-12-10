@@ -21,7 +21,7 @@ class OptionsController extends Kirby\Panel\Controllers\Base {
         }
 
         $site->update($form->serialize());
-        $self->notify(':)');
+        $self->notify('😏 ');
         return $self->redirect('options');
       } catch(Exception $e) {
         return $self->alert($e->getMessage());
