@@ -50,7 +50,7 @@ $size--icon__line: 2px;
       position: absolute;
       background-color: transparent;
       cursor: pointer;
-
+      z-index: 5;
       a {
         &.open-nav {
           .nav-icon {

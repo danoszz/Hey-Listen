@@ -45,6 +45,12 @@
   }
   @include media("<phone") {
     border: 0;
+
+    &:hover {
+      transition: none;
+      box-shadow: none;
+      transform: none;
+    }
   }
   // Specific classes in combination with Kirby Plugin oEmbed
   .kirby-plugin-oembed--YouTube {

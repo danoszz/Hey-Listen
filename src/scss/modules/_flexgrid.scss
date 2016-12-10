@@ -6,7 +6,7 @@
   flex-direction: row;
   flex-wrap: wrap;
   height: 100%;
-  margin-bottom: 5px;
+  margin-bottom: -$size--padding__grid-item;
   margin-right: -$size--padding__grid-item;
   @include media("<phone") {
     margin-right: 0;

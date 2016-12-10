@@ -1,8 +1,36 @@
 .about {
   width: 75%;
+  max-width: $size--max-width__main / 2;
   padding: $size--padding__header * 2;
 
   .about--text {
     margin: 0;
+    font-size: 3em;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: white;
+    @include media("<tablet") {
+      font-size: 2em;
+    }
+  }
+
+  .about--shoutout {
+    position: absolute;
+    right: $size--padding__header;
+    bottom: $size--padding__header;
+    transform: rotate(90deg);
+    transform-origin: right top;
+  }
+  @include media("<tablet") {
+    width: 100%;
+    padding: $size--padding__header 0 0;
+
+    .about--text {
+      font-size: 2em;
+    }
+
+    .about--shoutout {
+      transform: none;
+    }
   }
 }
