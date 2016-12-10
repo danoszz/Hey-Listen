@@ -17,6 +17,8 @@ for more information: http://getkirby.com/license
 
 c::set('license', 'put your license key here');
 
+c::set('plugin.oembed.video.autoplay', false);
+
 c::set('plugin.oembed.video.lazyload', true);
 c::set('plugin.oembed.video.lazyload.btn', 'assets/plugins/oembed/images/play.png');
 
@@ -25,8 +27,10 @@ c::set('plugin.oembed.caching.duration', 24); // in hours
 
 c::set('plugin.oembed.w3c.enforce', false);
 
+c::set('plugin.oembed.providers.jsapi', false);
 c::set('plugin.oembed.providers.facebook.key', null);
 c::set('plugin.oembed.providers.google.key', null);
+// c::set('plugin.oembed.providers.soundcloud.key', null):
 
 // Set Dashboard widgets
 
