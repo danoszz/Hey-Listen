@@ -1,11 +1,5 @@
 <div class="dashboard-box">
-  <?php
-
-  $projects = page('projects')->children()->visible();
-
-  if(isset($limit)) $projects = $projects->limit($limit);
-
-  ?>
+  <?php $projects = page('projects')->children()->visible();?>
 
   <?php if(empty($projects)): ?>
   <div class="text"><p>No music elements yet, add some above</p></div>

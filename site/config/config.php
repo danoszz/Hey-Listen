@@ -35,9 +35,9 @@ c::set('plugin.oembed.providers.google.key', null);
 c::set('panel.widgets', array(
   'musicelement' => true,
   'pages'    => true,
-  'site'     => false,
-  'account'  => false,
-  'history'  => true
+  'site'     => true,
+  'account'  => true,
+  'history'  => false
 ));
 
 
