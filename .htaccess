@@ -29,9 +29,14 @@ RewriteRule ^site/(.*) index.php [L]
 RewriteRule ^kirby/(.*) index.php [L]
 
 # make panel links work
+##RewriteCond %{REQUEST_FILENAME} !-f
+##RewriteCond %{REQUEST_FILENAME} !-d
+##RewriteRule ^panel/(.*) panel/index.php [L]
+
+# make panel links work
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^panel/(.*) panel/index.php [L]
+RewriteRule ^godmode/(.*) godmode/index.php [L]
 
 # make site links work
 RewriteCond %{REQUEST_FILENAME} !-f

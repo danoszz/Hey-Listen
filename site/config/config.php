@@ -29,7 +29,20 @@ c::set('plugin.oembed.w3c.enforce', false);
 c::set('plugin.oembed.providers.facebook.key', null);
 c::set('plugin.oembed.providers.google.key', null);
 // c::set('plugin.oembed.providers.soundcloud.key', null):
+
+// Set Dashboard widgets
+
+c::set('panel.widgets', array(
+  'musicelement' => true,
+  'pages'    => true,
+  'site'     => false,
+  'account'  => false,
+  'history'  => true
+));
+
+
 /*
+
 
 ---------------------------------------
 Kirby Configuration

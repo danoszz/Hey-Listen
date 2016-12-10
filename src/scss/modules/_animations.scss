@@ -190,3 +190,92 @@ http://codepen.io/gopperman/pen/dElzr?editors=001
     opacity: 0;
   }
 }
+
+
+/*----- Animations Header & Loading -----*/
+
+/* Initial animation of header elements */
+
+.loading {
+  .ip-logo {
+    opacity: 1;
+    animation: animInitialHeader 1s cubic-bezier(0.7, 0, 0.3, 1) both;
+  }
+  .ip-loader {
+    opacity: 1;
+    animation: animInitialHeader 1s cubic-bezier(0.7, 0, 0.3, 1) both;
+    animation-delay: 0.2s;
+  }
+}
+
+@keyframes animInitialHeader {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 800px, 0);
+    transform: translate3d(0, 800px, 0);
+  }
+}
+
+
+/* Header elements when loading finishes */
+
+.loaded {
+  .ip-logo, .ip-loader {
+    opacity: 1;
+  }
+  .ip-logo {
+    transform-origin: 50% 0;
+    animation: animLoadedLogo 1s cubic-bezier(0.7, 0, 0.3, 1) forwards;
+  }
+  .ip-loader {
+    animation: animLoadedLoader 0.5s cubic-bezier(0.7, 0, 0.3, 1) forwards;
+  }
+  .ip-logo svg path {
+    transition: all 0.5s ease 0.3s;
+    fill: $color-white;
+  }
+  .ip-header {
+    animation: animLoadedHeader 1s cubic-bezier(0.7, 0, 0.3, 1) forwards;
+  }
+  .ip-main .flexgrid .grid-item--flex .player {
+    animation: animLoadedContent 1s cubic-bezier(0.7, 0, 0.3, 1) both;
+  }
+}
+
+@keyframes animLoadedLogo {
+  to {
+    top: initial;
+    bottom: 0;
+    transform: translate3d(0, 100%, 0) translate3d(0, 110px, 0) scale3d(0.8, 0.8, 1);
+
+  }
+}
+
+
+@keyframes animLoadedLoader {
+  to {
+    opacity: 0;
+    transform: translate3d(0, -100%, 0) scale3d(0.3, 0.3, 1);
+  }
+}
+
+/* Header animation when loading finishes */
+
+@keyframes animLoadedHeader {
+  to {
+    transform: translate3d(0, -100%, 0);
+  }
+}
+
+
+/* Content animations */
+
+@for $i from 1 to 20 {
+  .loaded .ip-main .flexgrid .grid-item--flex:nth-child(#{$i}) .player { animation-delay: $i * 0.2s; }
+}
+
+@keyframes animLoadedContent {
+  from {
+    transform: translateY(20%);
+  }
+}

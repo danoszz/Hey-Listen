@@ -8,8 +8,9 @@ nav {
     top: $size--padding__header;
     right: $size--padding__header;
     left: $size--padding__header;
+    max-width: $size--max-width__main;
     list-style: none;
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     display: flex;
     justify-content: space-between;

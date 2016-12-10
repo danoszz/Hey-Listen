@@ -21,8 +21,7 @@ if(isset($limit)) $projects = $projects->limit($limit);
               <?php foreach($project->category()->split('//') as $tag): ?>
               <p><?php echo $tag ?></p>
               <?php endforeach ?>
-<!--
-              <p><?= $project->category()->html() ?></p> -->
+
             </div>
           </div>
         </div>

@@ -5,8 +5,9 @@
   max-height: $size--music-element__inner * 2;
   transition: all 400ms $transition--smooth__one;
   opacity: 1;
-  min-height: 10em;
-  background-color: lighten( $color-black, 20%);
+//  min-height: 10em;
+  height: 100%;
+//  background-color: lighten( $color-black, 20%);
   margin: 0 $size--padding__grid-item $size--padding__grid-item 0;
 
   .iframe--wrapper {
@@ -55,8 +56,8 @@
   color: white;
   text-align: center;
   padding: 5%;
-  min-height: 75px;
-
+  // min-height: 75px;
+  display: none;
   h3 {
     font-size: 1em;
   }
