@@ -9,11 +9,11 @@
   animation: track 5ms infinite, flickSmall 50ms infinite, jumpSmall 4s infinite;
 }
 
-$offset1: 3px;
-$offset2: -3px;
-$highlight1: red;
-$highlight2: green;
-$highlight3: blue;
+$offset1: 6px;
+$offset2: -6px;
+$highlight1: blue;
+$highlight2: red;
+$highlight3: green;
 
 @keyframes dropShadow {
   32% {
