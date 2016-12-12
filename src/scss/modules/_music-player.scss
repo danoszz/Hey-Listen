@@ -13,6 +13,10 @@
     background-color: lighten( $color-black, 20%);
     position: relative;
 
+    div {
+      transition: background-color 300ms ease-in;
+    }
+
     .kirby-plugin-oembed {
       &.kirby-plugin-oembed--Spotify {
         @extend %filter-heylisten_green;
@@ -31,7 +35,7 @@
     iframe {
       height: $size--music-element__inner;
       width: 100%;
-      filter: grayscale(100%);
+    //  filter: grayscale(100%);
     }
   }
 
@@ -40,20 +44,42 @@
     box-shadow: long-shadow( $direction: 45deg, $length: $size--distance__popout, $color: $color-white, $fade: $color-white );
     transform: translate(-$size--distance__popout, -$size--distance__popout);
 
-    .iframe--wrapper {
-      .kirby-plugin-oembed {
+    .player .iframe--wrapper {
+
+      div {
         &:after,
         &:before {
-          background-color:: transparent;
-          filter: none;
-        }
+            background-color: rgba($hl-green, 0);
+            background: transparent;
+          }
       }
+      // &.filter-heylisten_green {
+      //   &:after {
+      //     background-color: rgba($hl-green, 0);
+      //   }
+      // }
+      //
+      // &.filter-heylisten_blue {
+      //   &:after {
+      //     background-color: rgba($hl-blue, 0);
+      //   }
+      // }
+      //
+      // &.filter-heylisten_red {
+      //     background-color: rgba($hl-red, 0);
+      //     background-color: white;
+      //   &:after {
+      //     background-color: rgba($hl-red, 0);
+      //   }
+      // }
 
       iframe {
-        filter: grayscale(0);
+      //  filter: grayscale(0);
       }
     }
+
   }
+
   @include media(">phone", "<=tablet") {
     opacity: 1;
     margin-bottom: 5px;

@@ -1,3 +1,12 @@
+/*----------------*/
+/* CONFIG MODULES */
+/*----------------*/
+
+@import 'modules/_vars.scss';
+@import 'modules/_defaults.scss';
+@import 'modules/_normalize.scss';
+
+
 /*-------------*/
 /* SCSS MIXINS */
 /*-------------*/
@@ -6,14 +15,6 @@
 @import 'mixins/_responsive.scss';
 @import 'mixins/_longshadow.scss';
 @import 'mixins/_filter.scss';
-
-/*----------------*/
-/* CONFIG MODULES */
-/*----------------*/
-
-@import 'modules/_vars.scss';
-@import 'modules/_defaults.scss';
-@import 'modules/_normalize.scss';
 
 /*-----------*/
 /* PRELOADER */
