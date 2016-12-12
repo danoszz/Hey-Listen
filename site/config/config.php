@@ -15,7 +15,7 @@ for more information: http://getkirby.com/license
 
 */
 
-c::set('license', 'put your license key here');
+c::set('license', 'K2-PERSONAL-b59c7d729858020fd0dc81ca57dd14b1');
 
 c::set('plugin.oembed.video.autoplay', false);
 

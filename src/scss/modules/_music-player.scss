@@ -4,10 +4,8 @@
   overflow: hidden;
   max-height: $size--music-element__inner * 2;
   transition: all 400ms $transition--smooth__one;
-  opacity: 1;
-//  min-height: 10em;
-  height: 100%;
-//  background-color: lighten( $color-black, 20%);
+  opacity: 1; //  min-height: 10em;
+  height: 100%; //  background-color: lighten( $color-black, 20%);
   margin: 0 $size--padding__grid-item $size--padding__grid-item 0;
 
   .iframe--wrapper {
@@ -15,22 +13,44 @@
     background-color: lighten( $color-black, 20%);
     position: relative;
 
-    @extend %nashville;
+    .kirby-plugin-oembed {
+      &.kirby-plugin-oembed--Spotify {
+        @extend %filter-heylisten_green;
+      }
+
+      &.kirby-plugin-oembed--SoundCloud {
+        @extend %filter-heylisten_blue;
+      }
+
+      &.kirby-plugin-oembed--YouTube {
+        @extend %filter-heylisten_red;
+        position: initial;
+      }
+    }
+
     iframe {
       height: $size--music-element__inner;
       width: 100%;
+      filter: grayscale(100%);
     }
   }
 
   &:hover {
-      transition: all 400ms $transition--smooth__one;
-      box-shadow: long-shadow( $direction: 45deg, $length: $size--distance__popout, $color: $color-white, $fade: $color-white );
-      transform: translate(-$size--distance__popout, -$size--distance__popout);
+    transition: all 400ms $transition--smooth__one;
+    box-shadow: long-shadow( $direction: 45deg, $length: $size--distance__popout, $color: $color-white, $fade: $color-white );
+    transform: translate(-$size--distance__popout, -$size--distance__popout);
 
     .iframe--wrapper {
-      &:after,
-      &:before {
-        background: transparent;
+      .kirby-plugin-oembed {
+        &:after,
+        &:before {
+          background-color:: transparent;
+          filter: none;
+        }
+      }
+
+      iframe {
+        filter: grayscale(0);
       }
     }
   }
@@ -52,10 +72,6 @@
       transform: none;
     }
   }
-  // Specific classes in combination with Kirby Plugin oEmbed
-  .kirby-plugin-oembed--YouTube {
-    position: initial;
-  }
 }
 
 .info--section {
@@ -64,6 +80,7 @@
   padding: 5%;
   // min-height: 75px;
   display: none;
+
   h3 {
     font-size: 1em;
   }

@@ -28,39 +28,125 @@
     z-index: 3;
   }
 }
+//
+// /*
+//  *
+//  * Nashville
+//  *
+//  */
+//
+// // Customized for Hey Listen by Daan van der Zwaag 20/11/16
+//
+// @mixin nashville($filters...) {
+//   @include filter-base;
+//   filter: sepia(.2) contrast(1.2) brightness(1.05) saturate(1.2) $filters;
+//
+//
+//   &::before {
+//     //background: linear-gradient(to top right, rgba(50,255,00,0.62) 20%, rgba(255,0,50,0.4) 53%);
+//     background: linear-gradient(to top right, rgba(90,200,50,0.5) 10%, rgba(180,0,36,0.6) 75%);
+//     mix-blend-mode: screen;
+//   }
+//
+//   &::after {
+//     background: linear-gradient(to left bottom, rgba(0, 100, 40, 0.5), rgba(150,20,20,0.3) 50%);
+//     mix-blend-mode: color-dodge;
+//
+//   }
+//
+//
+//   @content;
+// }
+//
+// // nashville Instagram filter
+// %nashville,
+// .nashville {
+//   @include nashville;
+//
+// }
+
 
 /*
  *
- * Nashville
+ * Hey Listen! x RGB
  *
  */
 
-// Customized for Hey Listen by Daan van der Zwaag 20/11/16
+// Made for Hey Listen by Daan van der Zwaag 12/12/16
 
-@mixin nashville($filters...) {
+$hl-alpha: 1;
+$hl-red: red;
+$hl-green: green;
+$hl-blue: blue;
+
+// red
+
+@mixin filter-heylisten_red($filters...) {
   @include filter-base;
-  filter: sepia(.2) contrast(1.2) brightness(1.05) saturate(1.2) $filters;
-
 
   &::before {
-    //background: linear-gradient(to top right, rgba(50,255,00,0.62) 20%, rgba(255,0,50,0.4) 53%);
-    background: linear-gradient(to top right, rgba(90,200,50,0.5) 10%, rgba(180,0,36,0.6) 75%);
-    mix-blend-mode: screen;
+    // background-color: black;
+    // mix-blend-mode: hue;
   }
 
   &::after {
-    background: linear-gradient(to left bottom, rgba(0, 100, 40, 0.5), rgba(150,20,20,0.3) 50%);
-    mix-blend-mode: color-dodge;
-
+   background-color: rgba($hl-red, $hl-alpha);
+   mix-blend-mode: screen;
   }
-
 
   @content;
 }
 
-// nashville Instagram filter
-%nashville,
-.nashville {
-  @include nashville;
+%filter-heylisten_red,
+.filter-heylisten_red {
+  @include filter-heylisten_red;
+
+}
+
+// green
+
+@mixin filter-heylisten_green($filters...) {
+  @include filter-base;
+
+  &::before {
+    // background-color: black;
+    // mix-blend-mode: hue;
+  }
+
+  &::after {
+   background-color: rgba($hl-green, $hl-alpha);
+   mix-blend-mode: screen;
+  }
+
+  @content;
+}
+
+%filter-heylisten_green,
+.filter-heylisten_green {
+  @include filter-heylisten_green;
+
+}
+
+// blue
+
+@mixin filter-heylisten_blue($filters...) {
+  @include filter-base;
+
+  &::before {
+    // background-color: black;
+    // mix-blend-mode: hue;
+  }
+
+  &::after {
+   background-color: rgba($hl-blue, $hl-alpha);
+   mix-blend-mode: screen;
+  }
+
+  @content;
+}
+
+%filter-heylisten_blue,
+.filter-heylisten_blue {
+  @include filter-heylisten_blue;
 
 }
