@@ -1,4 +1,5 @@
 /* Full credits go to: https://github.com/una/CSSgram */
+/* Made some custom adjustments */
 
 @mixin pseudo-elem {
   content: '';
@@ -74,7 +75,11 @@
 
 // Made for Hey Listen by Daan van der Zwaag 12/12/16
 
-// red
+$hl-alpha: 0.9;
+$hl-red: red;
+$hl-green: green;
+$hl-blue: blue;
+
 
 @mixin filter-heylisten_red($filters...) {
   @include filter-base;
@@ -82,6 +87,7 @@
   &::before {
     background-color: black;
     mix-blend-mode: hue;
+    mix-blend-mode: lighten;
   }
 
   &::after {
@@ -106,6 +112,7 @@
   &::before {
     background-color: black;
     mix-blend-mode: hue;
+    mix-blend-mode: lighten;
   }
 
   &::after {
@@ -130,6 +137,7 @@
   &::before {
     background-color: black;
     mix-blend-mode: hue;
+    mix-blend-mode: lighten;
   }
 
   &::after {
