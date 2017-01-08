@@ -18,16 +18,23 @@
     }
 
     .kirby-plugin-oembed {
-      &.kirby-plugin-oembed--Spotify {
-        @extend %filter-heylisten_green;
+      // &.kirby-plugin-oembed--Spotify {
+      //   @extend %filter-heylisten_green;
+      // }
+      //
+      // &.kirby-plugin-oembed--SoundCloud {
+      //   @extend %filter-heylisten_blue;
+      // }
+      //
+      // &.kirby-plugin-oembed--YouTube {
+      //   @extend %filter-heylisten_red;
+      //   position: initial;
+      // }
+      &:after,
+      &:before {
+        transition: background-color 200ms $transition--smooth__one;
       }
-
-      &.kirby-plugin-oembed--SoundCloud {
-        @extend %filter-heylisten_blue;
-      }
-
       &.kirby-plugin-oembed--YouTube {
-        @extend %filter-heylisten_red;
         position: initial;
       }
     }
@@ -35,7 +42,31 @@
     iframe {
       height: $size--music-element__inner;
       width: 100%;
-    //  filter: grayscale(100%);
+      //  filter: grayscale(100%);
+    }
+  }
+
+  &:nth-child(1n+1) {
+    .iframe--wrapper {
+      .kirby-plugin-oembed {
+        @extend %filter-heylisten_red;
+      }
+    }
+  }
+
+  &:nth-child(2n+2) {
+    .iframe--wrapper {
+      .kirby-plugin-oembed {
+        @extend %filter-heylisten_green;
+      }
+    }
+  }
+
+  &:nth-child(3n+3) {
+    .iframe--wrapper {
+      .kirby-plugin-oembed {
+        @extend %filter-heylisten_blue;
+      }
     }
   }
 
@@ -44,41 +75,40 @@
     box-shadow: long-shadow( $direction: 45deg, $length: $size--distance__popout, $color: $color-white, $fade: $color-white );
     transform: translate(-$size--distance__popout, -$size--distance__popout);
 
-    .player .iframe--wrapper {
-
-      div {
-        &:after,
-        &:before {
-            background-color: rgba($hl-green, 0);
-            background: transparent;
+      &:nth-child(1n+1) {
+        .iframe--wrapper {
+          .kirby-plugin-oembed {
+            &:after,
+            &:before {
+                background-color: rgba($hl-red, 0);
+              }
           }
+        }
       }
-      // &.filter-heylisten_green {
-      //   &:after {
-      //     background-color: rgba($hl-green, 0);
-      //   }
-      // }
-      //
-      // &.filter-heylisten_blue {
-      //   &:after {
-      //     background-color: rgba($hl-blue, 0);
-      //   }
-      // }
-      //
-      // &.filter-heylisten_red {
-      //     background-color: rgba($hl-red, 0);
-      //     background-color: white;
-      //   &:after {
-      //     background-color: rgba($hl-red, 0);
-      //   }
-      // }
 
-      iframe {
-      //  filter: grayscale(0);
+      &:nth-child(2n+2) {
+        .iframe--wrapper {
+          .kirby-plugin-oembed {
+            &:after,
+            &:before {
+                background-color: rgba($hl-green, 0);
+              }
+            }
+        }
+      }
+
+      &:nth-child(3n+3) {
+        .iframe--wrapper {
+          .kirby-plugin-oembed {
+            &:after,
+            &:before {
+                background-color: rgba($hl-blue, 0);
+              }
+          }
+        }
       }
     }
 
-  }
 
   @include media(">phone", "<=tablet") {
     opacity: 1;
