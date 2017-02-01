@@ -55,3 +55,58 @@ a {
     }
   }
 }
+
+
+// Need to switch between RGB instead of totally random color-random
+
+$color-list: $color-red, $color-green, $color-blue;
+$key: random( length($color-list) );
+$color-random: nth($color-list, $key);
+
+.fancy__link {
+  position: relative;
+  transition: all 300ms $transition--smooth__one;
+
+  $size-font: 1rem;
+
+  &:after {
+    width: 0;
+    background: $color-random;
+    transition: all 600ms $transition--smooth__one;
+    will-change: transition;
+    position: absolute;
+    bottom: $size-font / 2;
+    right: -$size-font / 10;
+    height: $size-font / 1.5 ;
+    z-index: -2;
+    content: '';
+    display: inline-block;
+  }
+  &.red {
+    &:after {
+      background: $color-red;
+    }
+
+  }
+
+  &.green {
+      &:after {
+    background: $color-green;
+  }
+  }
+
+  &.blue {
+      &:after {
+      background: $color-blue;
+  }
+  }
+
+  &:hover {
+    &:after {
+      transition: all 600ms $transition--smooth__one;
+      left: -$size-font / 10;
+      width: calc(100% + #{$size-font / 10});
+    }
+  }
+
+}

@@ -7,12 +7,7 @@ fields:
     label: Title
     type:  text
 
-  intro:
-    label: Intro
+  text:
+    label: About
     type:  textarea
     size:  small
-
-  text:
-    label: Text
-    type:  textarea
-    size:  large

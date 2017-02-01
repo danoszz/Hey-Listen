@@ -1,10 +1,9 @@
 $color-black: #000000;
 $color-white: #ffffff;
+$color-red: red;
+$color-green: green;
+$color-blue: blue;
 
-$hl-alpha: 0.5;
-$hl-red: red;
-$hl-green: green;
-$hl-blue: blue;
 
 $size--distance__popout: 1rem;
 $size--padding__header: 2rem;
@@ -12,7 +11,7 @@ $size--max-width__main: 160em;
 $size--width__grid-item: 20%;
 $size--padding__grid-item: $size--width__grid-item / 10;
 $size--music-element__inner: 300px;
-$size--logo: 670px;
+$size--logo: 240px;
 
 $breakpoints: (phone: 30em, tablet: 55em, desktop: 64em, bigassscreen: 105em);
 

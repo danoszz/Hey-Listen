@@ -75,7 +75,7 @@
 
 // Made for Hey Listen by Daan van der Zwaag 12/12/16
 
-$hl-alpha: 0.9;
+$hl-alpha: 0.75;
 $hl-red: red;
 $hl-green: green;
 $hl-blue: blue;
@@ -86,8 +86,9 @@ $hl-blue: blue;
 
   &::before {
     background-color: black;
-    mix-blend-mode: hue;
     mix-blend-mode: lighten;
+    mix-blend-mode: hue;
+
   }
 
   &::after {
@@ -111,8 +112,8 @@ $hl-blue: blue;
 
   &::before {
     background-color: black;
-    mix-blend-mode: hue;
     mix-blend-mode: lighten;
+    mix-blend-mode: hue;
   }
 
   &::after {
@@ -136,8 +137,8 @@ $hl-blue: blue;
 
   &::before {
     background-color: black;
-    mix-blend-mode: hue;
     mix-blend-mode: lighten;
+    mix-blend-mode: hue;
   }
 
   &::after {

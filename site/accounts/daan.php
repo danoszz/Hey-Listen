@@ -7,7 +7,7 @@ email: daan@dvdz.design
 language: en
 role: admin
 history:
-  - projects/tof-nummer
+  - home
   - projects/hyper-riddim
   - projects/feux-rouges
   - projects

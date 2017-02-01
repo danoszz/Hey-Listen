@@ -4,6 +4,7 @@ files: false
 
 pages:
   template: project
+  limit: 80
 
 options:
   template: false

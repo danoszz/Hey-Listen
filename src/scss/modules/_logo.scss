@@ -23,7 +23,7 @@
 
   svg {
     fill: $highlight2;
-    animation: dropShadow 4000ms infinite ease-in-out alternate-reverse;
+    animation: dropShadow 8000ms infinite ease-in-out alternate-reverse;
     width: 100%;
     height: auto;
 
@@ -34,7 +34,7 @@
 
   &:after,
   &:before {
-    content: url(https://heylisten.dvdz.design/assets/images/logo_hey-listen_V3.svg);
+    content: url(https://heylisten.dvdz.design/assets/images/logo_hey-listen_V5_live.svg);
     position: absolute;
     top: 0;
     left: 0;
@@ -45,11 +45,11 @@
 
   &:before {
     left: $offset1;
-    animation: glitch-anim--logo 9s infinite ease-in alternate-reverse;
+    animation: glitch-anim--logo 12s infinite ease-in alternate-reverse;
   }
 
   &:after {
     left: $offset2;
-    animation: glitch-anim--logo 12s infinite ease-out alternate-reverse;
+    animation: glitch-anim--logo 14s infinite ease-out alternate-reverse;
   }
 }

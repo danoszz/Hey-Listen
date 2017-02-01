@@ -2,19 +2,12 @@ Title: Home
 
 ----
 
-Intro: Yay! If you are seeing this, the installation of Kirby worked. :-)
+Intro: It’s no coincidence that the publishing company Nervora chose Bonne Marque as their partners to launch Vogue Arabia. We had been moving towards clients of this stature. It was our time. In 2016, we completely embraced an ‘our way or no way’ bold approach.
 
 ----
 
 Text: 
 
-## Get started
+----
 
-- Go to the (link: panel text: Panel) to give Kirby's admin interface a try
-- Check out the (link: http://getkirby.com/docs text: docs) and start building your own site
-- Follow (twitter: @getkirby) on Twitter for updates
-- Visit the (link: http://forum.getkirby.com text: forum) to connect with other Kirby users
-- Sign up to (link: (link: https://getkirby.com/#kosmos text: Kirby Kosmos), our monthly newsletter
-- (link: http://getkirby.com/support text: Get in contact) if you need support.
-
-**Have fun with Kirby!**
+About: A meeting point, where digital design professionals from across the globe find inspiration, impart knowledge and experience, connect, and share constructive, respectful critiques. Always questioning and always evolving.

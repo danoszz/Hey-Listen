@@ -31,7 +31,7 @@
 
 .ip-logo {
   top: 0;
-  height: 100%;
+  height: 300px;
   transform: translate3d(0, 25%, 0);
 }
 
@@ -45,15 +45,19 @@
     margin: 0 auto;
   }
   .ip-logo svg {
-    min-width: $size--logo;
-    max-width: $size--logo;
+    min-width: $size--logo * 1.25;
+    max-width: $size--logo * 1.25;
     width: 25%;
     path {
       fill: $color-white;
     }
+    @include media(">=phone", "<tablet") {
+      min-width: $size--logo / 1.25;
+      max-width: $size--logo / 1.25;
+    }
     @include media("<phone") {
-      min-width: $size--logo / 2;
-      max-width: $size--logo / 2;
+      min-width: $size--logo / 1.5;
+      max-width: $size--logo / 1.5;
     }
   }
   .ip-loader svg path {
