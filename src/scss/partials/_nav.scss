@@ -16,7 +16,4 @@ nav {
     justify-content: space-between;
 
   }
-  @include media("<tablet") {
-      height: 14rem;
-  }
 }

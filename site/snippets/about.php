@@ -7,7 +7,9 @@
 				</a>
 			</div>
 			<div class="about">
-				<p class="about--text"><?= $page->text()->kirbytext() ?></p>
+				<p class="about--text">
+					<?= $page->text()->kirbytext() ?>
+				</p>
 			 	<a href="https://devign.it/" target="_blank" class="fancy__link about--shoutout">made by devign</a>
 			</div>
 		</div>
