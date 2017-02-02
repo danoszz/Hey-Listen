@@ -51,14 +51,14 @@
     path {
       fill: $color-white;
     }
-    @include media(">=phone", "<tablet") {
-      min-width: $size--logo / 1.25;
-      max-width: $size--logo / 1.25;
-    }
-    @include media("<phone") {
-      min-width: $size--logo / 1.5;
-      max-width: $size--logo / 1.5;
-    }
+    // @include media(">=phone", "<tablet") {
+    //   min-width: $size--logo / 1.25;
+    //   max-width: $size--logo / 1.25;
+    // }
+    // @include media("<phone") {
+    //   min-width: $size--logo / 1.5;
+    //   max-width: $size--logo / 1.5;
+    // }
   }
   .ip-loader svg path {
     fill: none;
