@@ -29,43 +29,6 @@
     z-index: 3;
   }
 }
-//
-// /*
-//  *
-//  * Nashville
-//  *
-//  */
-//
-// // Customized for Hey Listen by Daan van der Zwaag 20/11/16
-//
-// @mixin nashville($filters...) {
-//   @include filter-base;
-//   filter: sepia(.2) contrast(1.2) brightness(1.05) saturate(1.2) $filters;
-//
-//
-//   &::before {
-//     //background: linear-gradient(to top right, rgba(50,255,00,0.62) 20%, rgba(255,0,50,0.4) 53%);
-//     background: linear-gradient(to top right, rgba(90,200,50,0.5) 10%, rgba(180,0,36,0.6) 75%);
-//     mix-blend-mode: screen;
-//   }
-//
-//   &::after {
-//     background: linear-gradient(to left bottom, rgba(0, 100, 40, 0.5), rgba(150,20,20,0.3) 50%);
-//     mix-blend-mode: color-dodge;
-//
-//   }
-//
-//
-//   @content;
-// }
-//
-// // nashville Instagram filter
-// %nashville,
-// .nashville {
-//   @include nashville;
-//
-// }
-
 
 /*
  *
