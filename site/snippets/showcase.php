@@ -12,7 +12,7 @@ if(isset($limit)) $projects = $projects->limit($limit);
 
         <div class="grid-item--flex grid-item--flex__music music-player ">
           <div class="player">
-            <div class="iframe--wrapper"><?= $project->featured_video()->oembed([
+            <div class="iframe--wrapper"><?= $project->featured_video()->embed([
               'lazyvideo' => true
             ]) ?>
             </div>

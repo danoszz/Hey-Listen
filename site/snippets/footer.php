@@ -8,7 +8,7 @@
       ?></p>
     </div>
   </footer>
-  <?= js('assets/plugins/oembed/js/oembed.js') ?>
+  <?= js('assets/plugins/embed/js/embed.js') ?>
   <?= js('assets/js/app.min.js') ?>
 </body>
 </html>

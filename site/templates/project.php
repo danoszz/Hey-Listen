@@ -13,7 +13,7 @@
 
       <?= $page->text()->kirbytext() ?>
 
-      <?= $page->featured_video()->oembed([
+      <?= $page->featured_video()->embed([
         'lazyvideo' => true
       ]) ?>
     </div>

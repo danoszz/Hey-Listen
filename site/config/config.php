@@ -17,20 +17,22 @@ for more information: http://getkirby.com/license
 
 c::set('license', 'K2-PERSONAL-b59c7d729858020fd0dc81ca57dd14b1');
 
-c::set('plugin.oembed.video.autoplay', false);
+c::set('plugin.embed.video.autoplay', false);
 
-c::set('plugin.oembed.video.lazyload', true);
-c::set('plugin.oembed.video.lazyload.btn', 'assets/plugins/oembed/images/play.png');
+c::set('plugin.embed.video.lazyload', true);
+c::set('plugin.embed.video.lazyload.btn', 'assets/plugins/embed/images/play.png');
 
-c::set('plugin.oembed.caching', true);
-c::set('plugin.oembed.caching.duration', 24); // in hours
+c::set('plugin.embed.caching', true);
+c::set('plugin.embed.caching.duration', 24); // in hours
 
-c::set('plugin.oembed.w3c.enforce', false);
+c::set('plugin.embed.w3c.enforce', false);
 
-c::set('plugin.oembed.providers.jsapi', false);
-c::set('plugin.oembed.providers.facebook.key', null);
-c::set('plugin.oembed.providers.google.key', null);
-// c::set('plugin.oembed.providers.soundcloud.key', null):
+c::set('plugin.embed.providers.jsapi', false);
+c::set('plugin.embed.providers.google.key', null);
+c::set('plugin.embed.providers.soundcloud.key', null);
+
+c::set('debug',true);
+
 
 // Set Dashboard widgets
 

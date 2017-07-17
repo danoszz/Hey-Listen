@@ -20,7 +20,7 @@ fields:
 
   featured_video:
     label:      Music Element
-    type:       oembed
+    type:       embed
     preview:    true
     required:   true
     info:       false

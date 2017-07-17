@@ -36,7 +36,7 @@
   <meta name="msapplication-square310x310logo" content="https://heylisten.nl/assets/images/favicon/mstile-310x310.png" />
 
 
-  <?= css('assets/plugins/oembed/css/oembed.css') ?>
+  <?= css('assets/plugins/embed/css/embed.css') ?>
   <?= css('assets/css/styles.min.css') ?>
   <?= js('assets/js/vendor/modernizr.custom.js') ?>
 

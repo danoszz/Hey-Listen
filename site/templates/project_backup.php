@@ -23,7 +23,7 @@
           <img src="<?= $image->url() ?>" alt="<?= $page->title()->html() ?>" />
         </figure>
       <?php endforeach ?>
-      <?= $page->featured_music()->oembed([
+      <?= $page->featured_music()->embed([
         'lazyvideo' => true
       ]) ?>
     </div>

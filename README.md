@@ -8,7 +8,7 @@ A custom experimental website for Hey listen music management. It was my first t
 * [Gulp.js](http://gulpjs.com/)
 * [Kirby CMS](https://getkirby.com)
 * [Kirby Starter](https://github.com/elmnt/kirby-starter)
-* [oEmbed](https://github.com/distantnative/oembed)
+* [embed](https://github.com/distantnative/embed)
 
 ## License
 

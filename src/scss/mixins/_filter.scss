@@ -15,7 +15,7 @@
 @mixin filter-base {
   position: relative;
 
-  .kirby-plugin-oembed {
+  .embed.embed--rich {
     z-index: 1;
   }
 
