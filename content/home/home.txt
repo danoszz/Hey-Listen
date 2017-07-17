@@ -6,8 +6,4 @@ Intro: It’s no coincidence that the publishing company Nervora chose Bonne Mar
 
 ----
 
-Text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tincidunt sem urna, eget sollicitudin orci consectetur nec. Aenean in maximus dui, eget euismod dui. Donec condimentum, purus at finibus auctor, dui sem lacinia enim, id congue odio felis in tellus. Aliquam quis pellentesque nulla. Fusce egestas est tellus, vitae scelerisque ipsum tristique eu.
-
-----
-
-About: A meeting point, where digital design professionals from across the globe find inspiration, impart knowledge and experience, connect, and share constructive, respectful critiques. Always questioning and always evolving.
+Text: Hey!Listen is a boutique, A&R driven management and publishing company, working with indie-electronic / dance music artists and writers.

@@ -7,10 +7,10 @@ email: daan@dvdz.design
 language: en
 role: admin
 history:
+  - projects
   - home
   - projects/hyper-riddim
   - projects/feux-rouges
-  - projects
   - projects/back-to-the-start
 firstname: Daan
 lastname: van der Zwaag

@@ -1,4 +1,4 @@
-Title: Hey! Listen
+Title: Hey Listen
 
 ----
 
@@ -6,7 +6,7 @@ Author: Daan van der Zwaag
 
 ----
 
-Description: H!L is a boutique, A&R driven management and publishing company, working with indie-electronic / dance music artists and writers.
+Description: Music Publishing
 
 ----
 
